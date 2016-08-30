@@ -1,0 +1,19 @@
+#Write a program that prints the number of times the string 'bob' occurs in s. 
+#For example, if s = 'azcbobobegghakl', then your program should print Number of times bob occurs is: 2
+#https://github.com/cosmopod/MIT_6001/blob/master/COUNTING%20BOBS.py
+num=0
+for i in range(len(s)):
+    if s[i:].startswith('bob'):  #startswitch()判断开头是否满足字符串，i将本字符串遍历
+        num += 1
+print("Number of times bob occurs is: ") + num
+#http://blog.csdn.net/myjiayan/article/details/23372133
+s='azcbobobegghakl'  
+count = 0  
+while s:  
+    position = s.find('bob')  #查找满足‘bob’字符串，True返回索引，False返回-1
+    if position!=-1:  
+        count+=1  
+    else:  
+        break  
+    s=s[position+1:]          #逐次遍历
+print 'Number of times bob occurs is: '+str(count)
