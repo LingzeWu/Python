@@ -3,7 +3,7 @@
 #https://github.com/cosmopod/MIT_6001/blob/master/COUNTING%20BOBS.py
 num=0
 for i in range(len(s)):
-    if s[i:].startswith('bob'):  #startswitch()判断开头是否满足字符串，i将本字符串遍历
+    if s[i:].startswith('bob'):  #startswitch()判断开头是否满足字符串，i将本字符串遍历,startswitch()返回的是布尔值
         num += 1
 print("Number of times bob occurs is: ") + num
 #http://blog.csdn.net/myjiayan/article/details/23372133
