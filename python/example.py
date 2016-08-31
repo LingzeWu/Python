@@ -11,7 +11,7 @@ def gcdIter(a, b):
         else :
             return i
             
-#A  mathematical trick (due to Euclid)
+#A  mathematical trick (due to Euclid)  iterative
 def gcdRecur(a, b):            
 if b ==0:
         return a
